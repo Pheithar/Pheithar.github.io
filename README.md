@@ -1,3 +1,5 @@
+This README is the one used in the template I am using for my personal webpage
+
 # React JS Resume Website Template
 
 ![ReactJS Resume Website Template](resume-screenshot.jpg?raw=true 'ReactJS Resume Website Template')
