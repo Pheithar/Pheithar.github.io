@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Alejandro Webpage',
+  description: "this is the webpage of Alejandro Valverde Mahou",
 };
 
 /**
@@ -69,18 +69,17 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Alejandro Valverde Mahou.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        Hey there! I'm a student currently based in Denmark, where I'm pursuing a Master's degree in <strong className="text-stone-100">Human-Centered Artificial</strong> Intelligence. I'm a huge fan of AI and machine learning, but I'm also passionate about exploring new and diverse topics that expand my horizons.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        I completed my degree in <strong className="text-stone-100">Computer Engineering at Carlos III University of Madrid</strong>, which was an awesome experience. But now, I'm having a blast living and studying in Copenhagen, where I'm getting to dive even deeper into the exciting world of AI.
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg"> 
+        I'm really interested in research, and I'm seriously considering doing a PhD. I think that would be an incredible opportunity to contribute something meaningful to the field and create positive change in the world. Plus, it would be a chance to work on some really cool projects and learn a ton along the way.
       </p>
     </>
   ),
@@ -104,14 +103,12 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I'm an AI enthusiast with a particular interest in machine learning, deep learning, and computer vision. I'm pursuing a Master's degree in Human-Centered Artificial Intelligence, and I enjoy working with Python and PyTorch. In my free time, I love learning about Norse mythology, hiking, and reading fantasy novels. I'm driven by a desire to make a positive impact through research and innovation, and I'm always excited to collaborate with others to develop innovative solutions.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
+    {label: 'Location', text: 'Copenhagen, Denmark', Icon: MapIcon},
+    // {label: 'Age', text: '23', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Spanish', Icon: FlagIcon},
+    {label: 'Interests', text: 'Hockey, Norse Mythology, AI', Icon: SparklesIcon},
     {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
   ],
@@ -365,9 +362,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Pheithar'},
+  // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/pheithar/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/alemahou/'},
+  // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
