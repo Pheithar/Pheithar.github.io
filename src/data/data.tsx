@@ -6,6 +6,7 @@ import {
   MapIcon,
   OfficeBuildingIcon,
   SparklesIcon,
+  MailIcon,
 } from '@heroicons/react/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
@@ -13,7 +14,7 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/header-background.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -85,7 +86,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/assets/AVM_CV.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
@@ -109,8 +110,8 @@ export const aboutData: About = {
     // {label: 'Age', text: '23', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Spanish', Icon: FlagIcon},
     {label: 'Interests', text: 'Hockey, Norse Mythology, AI', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Study', text: 'DTU', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'ConWX, rapidcreative.io', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -265,39 +266,47 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'September 2021 - February 2024',
+    location: 'Denmark Technical University (DTU)',
+    title: 'MSc Eng in Human-Centered Artificial Intelligence',
+    content: <p>I completed my MSc in Human-Centered AI at DTU, specializing in machine learning, optimization algorithms, and data science with a focus on computer vision. I gained experience working with cutting-edge technologies such as transformers and diffusion models, and completed coursework in deep learning, advance image analysis and optimization using metaheuristics among others.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'September 2017 - July 2021',
+    location: 'Universidad Carlos III de Madrid (UC3M)',
+    title: 'Bachelor in Computer Science and Engineering',
+    content: <p>I finished my Bachelor degree in Computer Science and Engineering where I focused in Artificial Intelligence, Software Development, and Web Development. My Bachelor thesis on Generative Adversarial Networks received top honors with a 10/10 rating.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'February 2023 - Present',
+    location: 'rapidcreative.io',
+    title: 'Tech team member and co-founder',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Working in the tech team at rapidcreatve.io as a full-stack developer, contributing to the development of web applications and user interfaces using Next.js as frontend framework and Python as backend language. I am also co-founder of the company, that was born in the X-Tech program at DTU.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'May 2022 - Present',
+    location: 'ConWX',
+    title: 'Student Assistant in the Engineering Team',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        I am currently working as a student assistant in the engineering team at ConWX, where I am developing a new web application for the company using React.
+      </p>
+    ),
+  },
+  {
+    date: 'June 2020 - September 2020',
+    location: 'Global incubator',
+    title: 'Internship in FrontEnd developer',
+    content: (
+      <p>
+        Interned as a Frontend Developer with focus on React, contributing to the development of web applications and user interfaces using React as frontend framework.
       </p>
     ),
   },
@@ -333,28 +342,33 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: "Thank you for taking the time to view my profile. If you have any questions or would like to discuss potential opportunities, please don't hesitate to reach out. I can be contacted via email, and I'm always open to connecting on LinkedIn. Looking forward to hearing from you!",
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'avalverdemahou@gmail.com',
+      href: 'mailto:avalverdemahou@gamil.com',
     },
-    {
-      type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
-    },
+    // {
+    //   type: ContactType.Location,
+    //   text: 'Copenhagen, Denmark',
+    //   href: 'https://www.google.com/maps/place/Copenhague/@55.6713442,12.5237846,12z/data=!3m1!4b1!4m6!3m5!1s0x4652533c5c803d23:0x4dd7edde69467b8!8m2!3d55.6760968!4d12.5683372!16zL20vMDFsZnk',
+    // },
+    // {
+    //   type: ContactType.Instagram,
+    //   text: '@alemahou',
+    //   href: 'https://www.instagram.com/alemahou/',
+    // },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'Pheithar',
+      href: 'https://github.com/Pheithar'
     },
+    {
+      type: ContactType.LinkedIn,
+      text: 'Alejandro Valverde Mahou',
+      href: 'https://www.linkedin.com/in/pheithar/'
+    }
   ],
 };
 
@@ -366,5 +380,6 @@ export const socialLinks: Social[] = [
   // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/pheithar/'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/alemahou/'},
+  {label: 'Email', Icon: MailIcon, href: 'mailto:avalverdemahou@gmail.com'},
   // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
