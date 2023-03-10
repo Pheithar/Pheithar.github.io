@@ -123,67 +123,175 @@ export const skills: SkillGroup[] = [
     name: 'Spoken languages',
     skills: [
       {
-        name: 'English',
+        name: 'Spanish',
         level: 10,
+        color: 'orange',
+      },
+      {
+        name: 'English',
+        level: 9,
+        color: 'orange',
+      },
+      {
+        name: 'German',
+        level: 3,
+        color: 'orange',
+      },
+      {
+        name: 'Japanese',
+        level: 1,
+        color: 'orange',
       },
       {
         name: 'French',
-        level: 4,
+        level: 1,
+        color: 'orange',
+      }
+    ],
+  },
+  {
+    name: 'Programming languages',
+    skills: [
+      {
+        name: 'Python',
+        level: 9,
+        color: 'red',
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'JavaScript',
+        level: 7,
+        color: 'red',
+      },
+      {
+        name: 'Bash',
+        level: 6,
+        color: 'red',
+      },
+      {
+        name: 'C++',
+        level: 6,
+        color: 'red',
+      },
+      {
+        name: 'C#',
+        level: 5,
+        color: 'red',
+      },
+      {
+        name: 'Julia',
+        level: 5,
+        color: 'red',
+      },
+
+    ],
+  },
+  {
+    name: 'Data science',
+    skills: [
+      {
+        name: 'Pandas',
+        level: 8,
+        color: 'green',
+      },
+      {
+        name: 'NumPy',
+        level: 8,
+        color: 'green',
+      },
+      {
+        name: 'Matplotlib',
+        level: 8,
+        color: 'green',
+      },
+      {
+        name: 'Scikit-learn',
+        level: 6,
+        color: 'green',
+      },
+      {
+        name: 'Plotly',
+        level: 4,
+        color: 'green',
       },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Machine learning',
+    skills: [
+      {
+        name: 'PyTorch',
+        level: 8,
+        color: 'green',
+      },
+      {
+        name: 'TensorFlow',
+        level: 6,
+        color: 'green',
+      },
+      {
+        name: 'Keras',
+        level: 6,
+        color: 'green',
+      },
+      {
+        name: 'Scikit-learn',
+        level: 6,
+        color: 'green',
+      },
+      {
+        name: 'OpenCV',
+        level: 5,
+        color: 'green',
+      },
+    ],
+  },
+  {
+    name: 'Web development',
     skills: [
       {
         name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
         level: 7,
+        color: 'amber',
       },
       {
-        name: 'GraphQL',
+        name: 'Next.js',
         level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
-        level: 8,
+        color: 'amber',
       },
       {
-        name: 'Rust',
+        name: 'Angular',
         level: 5,
+        color: 'amber',
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'Firebase',
+        level: 3,
+        color: 'amber',
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Game development',
     skills: [
       {
-        name: 'React Native',
-        level: 9,
+        name: 'Unity',
+        level: 6,
+        color: 'blue',
       },
       {
-        name: 'Flutter',
+        name: 'C#',
+        level: 6,
+        color: 'blue',
+      },
+      {
+        name: 'Godot',
+        level: 5,
+        color: 'blue',
+      },
+      {
+        name: 'Blender',
         level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
+        color: 'blue',
       },
     ],
   },
