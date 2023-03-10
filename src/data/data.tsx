@@ -3,10 +3,10 @@ import {
   // CalendarIcon,
   DownloadIcon,
   FlagIcon,
+  MailIcon,
   MapIcon,
   OfficeBuildingIcon,
   SparklesIcon,
-  MailIcon,
 } from '@heroicons/react/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
@@ -125,27 +125,22 @@ export const skills: SkillGroup[] = [
       {
         name: 'Spanish',
         level: 10,
-        color: 'orange',
       },
       {
         name: 'English',
         level: 9,
-        color: 'orange',
       },
       {
         name: 'German',
         level: 3,
-        color: 'orange',
       },
       {
         name: 'Japanese',
         level: 1,
-        color: 'orange',
       },
       {
         name: 'French',
         level: 1,
-        color: 'orange',
       }
     ],
   },
@@ -155,63 +150,53 @@ export const skills: SkillGroup[] = [
       {
         name: 'Python',
         level: 9,
-        color: 'red',
       },
       {
         name: 'JavaScript',
         level: 7,
-        color: 'red',
       },
       {
         name: 'Bash',
         level: 6,
-        color: 'red',
       },
       {
         name: 'C++',
         level: 6,
-        color: 'red',
       },
       {
         name: 'C#',
         level: 5,
-        color: 'red',
       },
       {
         name: 'Julia',
         level: 5,
-        color: 'red',
       },
 
     ],
   },
+
   {
     name: 'Data science',
     skills: [
       {
         name: 'Pandas',
         level: 8,
-        color: 'green',
       },
       {
         name: 'NumPy',
         level: 8,
-        color: 'green',
       },
       {
         name: 'Matplotlib',
         level: 8,
-        color: 'green',
       },
       {
         name: 'Scikit-learn',
         level: 6,
-        color: 'green',
       },
       {
         name: 'Plotly',
         level: 4,
-        color: 'green',
       },
     ],
   },
@@ -221,52 +206,22 @@ export const skills: SkillGroup[] = [
       {
         name: 'PyTorch',
         level: 8,
-        color: 'green',
       },
       {
         name: 'TensorFlow',
         level: 6,
-        color: 'green',
       },
       {
         name: 'Keras',
         level: 6,
-        color: 'green',
       },
       {
         name: 'Scikit-learn',
         level: 6,
-        color: 'green',
       },
       {
         name: 'OpenCV',
         level: 5,
-        color: 'green',
-      },
-    ],
-  },
-  {
-    name: 'Web development',
-    skills: [
-      {
-        name: 'React',
-        level: 7,
-        color: 'amber',
-      },
-      {
-        name: 'Next.js',
-        level: 6,
-        color: 'amber',
-      },
-      {
-        name: 'Angular',
-        level: 5,
-        color: 'amber',
-      },
-      {
-        name: 'Firebase',
-        level: 3,
-        color: 'amber',
       },
     ],
   },
@@ -276,22 +231,18 @@ export const skills: SkillGroup[] = [
       {
         name: 'Unity',
         level: 6,
-        color: 'blue',
       },
       {
         name: 'C#',
         level: 6,
-        color: 'blue',
       },
       {
         name: 'Godot',
         level: 5,
-        color: 'blue',
       },
       {
         name: 'Blender',
         level: 4,
-        color: 'blue',
       },
     ],
   },
