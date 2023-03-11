@@ -15,17 +15,23 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.jpg';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import animalImg from '../images/portfolio/animalSound.jpg';
+import gameImg from '../images/portfolio/dynamicDifficulty.jpg';
+import hnefataflImg from '../images/portfolio/hneftal.jpg';
+import madridCentralImg from '../images/portfolio/Madrid Central.jpg';
+import nerveImg from '../images/portfolio/nerves_segm.jpg';
+import pokeImg from '../images/portfolio/pokeIcon.jpg';
+// import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+// import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+// import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+// import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+// import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+// import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+// import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+// import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+// import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+// import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+// import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -46,7 +52,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Alejandro Webpage',
-  description: "this is the webpage of Alejandro Valverde Mahou",
+  description: "This is the personal webpage of Alejandro Valverde Mahou",
 };
 
 /**
@@ -86,7 +92,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/AVM_CV.pdf',
+      href: '/assets/AIA_POSTER.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
@@ -130,18 +136,18 @@ export const skills: SkillGroup[] = [
         name: 'English',
         level: 9,
       },
-      {
-        name: 'German',
-        level: 3,
-      },
-      {
-        name: 'Japanese',
-        level: 1,
-      },
-      {
-        name: 'French',
-        level: 1,
-      }
+      // {
+      //   name: 'German',
+      //   level: 3,
+      // },
+      // {
+      //   name: 'Japanese',
+      //   level: 1,
+      // },
+      // {
+      //   name: 'French',
+      //   level: 1,
+      // }
     ],
   },
   {
@@ -253,71 +259,41 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage1,
+    title: 'Madrid Central analysis and visualization',
+    description: 'Analyzed Madrid Central social impact using Madrid City Council data and Python/Pandas for a DTU course project in 2022.',
+    url: 'https://sites.google.com/view/madridcentral/homepage',
+    image: madridCentralImg,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage2,
+    title: 'Nerve Segmentation',
+    description: 'Segment myelinated axons from 3D X-ray tomographies using MRF and deformable models, and extract microstructural measurements (e.g. nerve areas, radius, myelin density) to study nerve disorders and progression for a DTU course project in 2022.',
+    url: '/assets/AIA_POSTER.pdf',
+    image: nerveImg,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage3,
+    title: 'Dynamic difficulty AI for game NPCs',
+    description: 'using genetic algorithm to implement adaptable difficulty in a game for a DTU course project in 2022.',
+    url: 'https://github.com/akua21/Dynamic-Difficulty-AI-Game',
+    image: gameImg,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage4,
+    title: 'Bachelor Thesis: PokeGAN',
+    description: 'A GAN-based approach to generate Pokemon images. This project was part of my Bachelor thesis in 2021. (It is in Spanish, only last pages are in English)',
+    url: '/assets/TFG_AVM.pdf',
+    image: pokeImg,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage5,
+    title: 'Hierarchical Classification of animal sounds',
+    description: 'A neural network approach for animal sound classification using CNNs and LSTMs, with a dataset of over 16,000 samples transformed into Spectrograms, and exploring a hierarchical method based on the taxonomy of animals for improved classification results. This project was part of a course project at DTU in 2021.',
+    url: '/assets/AnimalSounds.pdf',
+    image: animalImg,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
-    image: porfolioImage11,
-  },
+    title: 'Hnefatafl',
+    description: 'A small Hnefatafl game I made with p5 to learn the basics of it. It is a Viking board game where the goal is to capture the king.',
+    url: 'https://pheithar.github.io/Hnefatafl/',
+    image: hnefataflImg,
+  }
 ];
 
 /**
