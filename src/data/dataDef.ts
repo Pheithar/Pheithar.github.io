@@ -93,6 +93,14 @@ export interface TimelineItem {
   content: JSX.Element;
 }
 
+export interface TimeLineItemWithLink {
+  date: string;
+  location: string;
+  link: string;
+  title: string;
+  authors: JSX.Element;
+}
+
 /**
  * Testimonial section
  */

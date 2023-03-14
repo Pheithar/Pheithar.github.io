@@ -45,6 +45,7 @@ import {
   Social,
   TestimonialSection,
   TimelineItem,
+  TimeLineItemWithLink,
 } from './dataDef';
 
 /**
@@ -254,6 +255,18 @@ export const skills: SkillGroup[] = [
   },
 ];
 
+/**
+ * Publications section 
+ */
+export const publications: TimeLineItemWithLink[] = [
+  {
+    title: 'Learning to Generate 3D Representations of Building Roofs Using Single-View Aerial Imagery',
+    location: 'ICASSP 2023',
+    link: "https://www.google.com",
+    date: 'March 2023',
+    authors: <p>Maxim Khomiakov, <strong>Alejandro Valverde Mahou</strong>, Alba Reinders Sánchez, Jes Frellsen , Michael Riis Andersen</p>,
+  },
+];
 /**
  * Portfolio section
  */
