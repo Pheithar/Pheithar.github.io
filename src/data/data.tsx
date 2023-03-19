@@ -93,7 +93,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/AIA_POSTER.pdf',
+      href: '/assets/CV_AVM.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
