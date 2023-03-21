@@ -331,10 +331,10 @@ export const experience: TimelineItem[] = [
   {
     date: 'February 2023 - Present',
     location: 'rapidcreative.io',
-    title: 'Tech team member and co-founder',
+    title: 'Lead Frontend Development and co-founder',
     content: (
       <p>
-        Working in the tech team at rapidcreatve.io as a full-stack developer, contributing to the development of web applications and user interfaces using Next.js as frontend framework and Python as backend language. I am also co-founder of the company, that was born in the X-Tech program at DTU.
+        Working in the tech team at rapidcreatve.io as a full-stack developer, with focus on frontend, contributing to the development of web applications and user interfaces using Next.js as frontend framework and Python as backend language. I am also co-founder of the company, that was born in the X-Tech program at DTU.
       </p>
     ),
   },
