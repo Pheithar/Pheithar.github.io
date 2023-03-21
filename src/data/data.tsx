@@ -262,9 +262,9 @@ export const publications: TimeLineItemWithLink[] = [
   {
     title: 'Learning to Generate 3D Representations of Building Roofs Using Single-View Aerial Imagery',
     location: 'ICASSP 2023',
-    link: "https://www.google.com",
+    link: "https://arxiv.org/abs/2303.11215",
     date: 'March 2023',
-    authors: <p>Maxim Khomiakov, <strong>Alejandro Valverde Mahou</strong>, Alba Reinders Sánchez, Jes Frellsen , Michael Riis Andersen</p>,
+    authors: <p>Maxim Khomiakov, <strong>Alejandro Valverde Mahou</strong>, Alba Reinders Sánchez, Jes Frellsen, Michael Riis Andersen</p>,
   },
 ];
 /**
