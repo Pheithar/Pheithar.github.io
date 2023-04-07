@@ -10,8 +10,9 @@ import {
 } from '@heroicons/react/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+// import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
+import ScholarIcon from '../components/Icon/ScholarIcon';
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.jpg';
@@ -427,7 +428,8 @@ export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Pheithar'},
   // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/pheithar/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/alemahou/'},
+  // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/alemahou/'},
+  {label: 'Google Scholar', Icon: ScholarIcon, href: 'https://scholar.google.com/citations?user=wm9wdSkAAAAJ'},
   {label: 'Email', Icon: MailIcon, href: 'mailto:avalverdemahou@gmail.com'},
   // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
