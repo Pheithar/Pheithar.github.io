@@ -10,11 +10,8 @@ import {
 } from '@heroicons/react/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-// import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import ScholarIcon from '../components/Icon/ScholarIcon';
-// import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-// import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.jpg';
 import animalImg from '../images/portfolio/animalSound.jpg';
 import gameImg from '../images/portfolio/dynamicDifficulty.jpg';
@@ -22,17 +19,8 @@ import hnefataflImg from '../images/portfolio/hneftal.jpg';
 import madridCentralImg from '../images/portfolio/Madrid Central.jpg';
 import nerveImg from '../images/portfolio/nerves_segm.jpg';
 import pokeImg from '../images/portfolio/pokeIcon.jpg';
-// import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-// import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-// import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-// import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-// import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-// import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-// import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-// import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-// import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-// import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-// import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import proceduralAnt from '../images/portfolio/proceduralAnt.png';
+import flockImg from '../images/portfolio/flockBots.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -53,8 +41,9 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Alejandro Webpage',
-  description: "This is the personal webpage of Alejandro Valverde Mahou",
+  title: 'Alejandro Valverde Mahou - Personal Website',
+  description:
+    'This is the personal webpage of Alejandro Valverde Mahou, where he displays his CV, hobbies, research and projects.',
 };
 
 /**
@@ -82,13 +71,20 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Hey there! I'm a student currently based in Denmark, where I'm pursuing a Master's degree in <strong className="text-stone-100">Human-Centered Artificial</strong> Intelligence. I'm a huge fan of AI and machine learning, but I'm also passionate about exploring new and diverse topics that expand my horizons.
+        Hey there! I'm a student currently based in Denmark, where I'm pursuing a Master's degree in{' '}
+        <strong className="text-stone-100">Human-Centered Artificial</strong> Intelligence. I'm a huge fan of AI and
+        machine learning, but I'm also passionate about exploring new and diverse topics that expand my horizons.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I completed my degree in <strong className="text-stone-100">Computer Engineering at Carlos III University of Madrid</strong>, which was an awesome experience. But now, I'm having a blast living and studying in Copenhagen, where I'm getting to dive even deeper into the exciting world of AI.
+        I completed my degree in{' '}
+        <strong className="text-stone-100">Computer Engineering at Carlos III University of Madrid</strong>, which was
+        an awesome experience. But now, I'm having a blast living and studying in Copenhagen, where I'm getting to dive
+        even deeper into the exciting world of AI.
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg"> 
-        I'm really interested in research, and I'm seriously considering doing a PhD. I think that would be an incredible opportunity to contribute something meaningful to the field and create positive change in the world. Plus, it would be a chance to work on some really cool projects and learn a ton along the way.
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        I'm really interested in research, and I'm seriously considering doing a PhD. I think that would be an
+        incredible opportunity to contribute something meaningful to the field and create positive change in the world.
+        Plus, it would be a chance to work on some really cool projects and learn a ton along the way.
       </p>
     </>
   ),
@@ -138,18 +134,10 @@ export const skills: SkillGroup[] = [
         name: 'English',
         level: 9,
       },
-      // {
-      //   name: 'German',
-      //   level: 3,
-      // },
-      // {
-      //   name: 'Japanese',
-      //   level: 1,
-      // },
-      // {
-      //   name: 'French',
-      //   level: 1,
-      // }
+      {
+        name: 'Dutch',
+        level: 1,
+      },
     ],
   },
   {
@@ -164,6 +152,10 @@ export const skills: SkillGroup[] = [
         level: 7,
       },
       {
+        name: 'C#',
+        level: 6,
+      },
+      {
         name: 'Bash',
         level: 6,
       },
@@ -172,14 +164,9 @@ export const skills: SkillGroup[] = [
         level: 6,
       },
       {
-        name: 'C#',
-        level: 5,
-      },
-      {
         name: 'Julia',
         level: 5,
       },
-
     ],
   },
 
@@ -257,15 +244,20 @@ export const skills: SkillGroup[] = [
 ];
 
 /**
- * Publications section 
+ * Publications section
  */
 export const publications: TimeLineItemWithLink[] = [
   {
     title: 'Learning to Generate 3D Representations of Building Roofs Using Single-View Aerial Imagery',
     location: 'ICASSP 2023',
-    link: "https://arxiv.org/abs/2303.11215",
+    link: 'https://arxiv.org/abs/2303.11215',
     date: 'March 2023',
-    authors: <p>Maxim Khomiakov, <strong>Alejandro Valverde Mahou</strong>, Alba Reinders Sánchez, Jes Frellsen, Michael Riis Andersen</p>,
+    authors: (
+      <p>
+        Maxim Khomiakov, <strong>Alejandro Valverde Mahou</strong>, Alba Reinders Sánchez, Jes Frellsen, Michael Riis
+        Andersen
+      </p>
+    ),
   },
 ];
 /**
@@ -273,41 +265,61 @@ export const publications: TimeLineItemWithLink[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Madrid Central analysis and visualization',
-    description: 'Analyzed Madrid Central social impact using Madrid City Council data and Python/Pandas for a DTU course project in 2022.',
-    url: 'https://sites.google.com/view/madridcentral/homepage',
-    image: madridCentralImg,
-  },
-  {
     title: 'Nerve Segmentation',
-    description: 'Segment myelinated axons from 3D X-ray tomographies using MRF and deformable models, and extract microstructural measurements (e.g. nerve areas, radius, myelin density) to study nerve disorders and progression for a DTU course project in 2022.',
+    description:
+      'Segment myelinated axons from 3D X-ray tomographies using MRF and deformable models, and extract microstructural measurements (e.g. nerve areas, radius, myelin density) to study nerve disorders and progression for a DTU course project in 2022.',
     url: '/assets/AIA_POSTER.pdf',
     image: nerveImg,
   },
   {
+    title: 'Procedural Robot Modelling using Blender',
+    description:
+      'Part 1 of a project made for a course in spring of 2023 where we created a procedural robot model using Blender Geometry Nodes and the Blender Scripting using Python.',
+    url: 'https://github.com/akua21/procedural-robot-modelling',
+    image: proceduralAnt,
+  },
+  {
+    title: 'Procedural Animation and Flock Behavior',
+    description:
+      'Part 2 of a project made for a course in spring of 2023 where we animated using procedural animation and implemented flock behavior using Boids in Unity.',
+    url: 'https://github.com/akua21/procedural-robot-modelling',
+    image: flockImg,
+  },
+  {
+    title: 'Madrid Central analysis and visualization',
+    description:
+      'Analyzed Madrid Central social impact using Madrid City Council data and Python/Pandas for a DTU course project in 2022.',
+    url: 'https://sites.google.com/view/madridcentral/homepage',
+    image: madridCentralImg,
+  },
+  {
     title: 'Dynamic difficulty AI for game NPCs',
-    description: 'using genetic algorithm to implement adaptable difficulty in a game for a DTU course project in 2022.',
+    description:
+      'using genetic algorithm to implement adaptable difficulty in a game for a DTU course project in 2022.',
     url: 'https://github.com/akua21/Dynamic-Difficulty-AI-Game',
     image: gameImg,
   },
   {
     title: 'Bachelor Thesis: PokeGAN',
-    description: 'A GAN-based approach to generate Pokemon images. This project was part of my Bachelor thesis in 2021. (It is in Spanish, only last pages are in English)',
+    description:
+      'A GAN-based approach to generate Pokemon images. This project was part of my Bachelor thesis in 2021. (It is in Spanish, only last pages are in English)',
     url: '/assets/TFG_AVM.pdf',
     image: pokeImg,
   },
   {
     title: 'Hierarchical Classification of animal sounds',
-    description: 'A neural network approach for animal sound classification using CNNs and LSTMs, with a dataset of over 16,000 samples transformed into Spectrograms, and exploring a hierarchical method based on the taxonomy of animals for improved classification results. This project was part of a course project at DTU in 2021.',
+    description:
+      'A neural network approach for animal sound classification using CNNs and LSTMs, with a dataset of over 16,000 samples transformed into Spectrograms, and exploring a hierarchical method based on the taxonomy of animals for improved classification results. This project was part of a course project at DTU in 2021.',
     url: '/assets/AnimalSounds.pdf',
     image: animalImg,
   },
   {
     title: 'Hnefatafl',
-    description: 'A small Hnefatafl game I made with p5 to learn the basics of it. It is a Viking board game where the goal is to capture the king.',
+    description:
+      'A small Hnefatafl game I made with p5 to learn the basics of it. It is a Viking board game where the goal is to capture the king.',
     url: 'https://pheithar.github.io/Hnefatafl/',
     image: hnefataflImg,
-  }
+  },
 ];
 
 /**
@@ -318,13 +330,26 @@ export const education: TimelineItem[] = [
     date: 'September 2021 - February 2024',
     location: 'Denmark Technical University (DTU)',
     title: 'MSc Eng in Human-Centered Artificial Intelligence',
-    content: <p>I completed my MSc in Human-Centered AI at DTU, specializing in machine learning, optimization algorithms, and data science with a focus on computer vision. I gained experience working with cutting-edge technologies such as transformers and diffusion models, and completed coursework in deep learning, advance image analysis and optimization using metaheuristics among others.</p>,
+    content: (
+      <p>
+        I completed my MSc in Human-Centered AI at DTU, specializing in machine learning, optimization algorithms, and
+        data science with a focus on computer vision. I gained experience working with cutting-edge technologies such as
+        transformers and diffusion models, and completed coursework in deep learning, advance image analysis and
+        optimization using metaheuristics among others.
+      </p>
+    ),
   },
   {
     date: 'September 2017 - July 2021',
     location: 'Universidad Carlos III de Madrid (UC3M)',
     title: 'Bachelor in Computer Science and Engineering',
-    content: <p>I finished my Bachelor degree in Computer Science and Engineering where I focused in Artificial Intelligence, Software Development, and Web Development. My Bachelor thesis on Generative Adversarial Networks received top honors with a 10/10 rating.</p>,
+    content: (
+      <p>
+        I finished my Bachelor degree in Computer Science and Engineering where I focused in Artificial Intelligence,
+        Software Development, and Web Development. My Bachelor thesis on Generative Adversarial Networks received top
+        honors with a 10/10 rating.
+      </p>
+    ),
   },
 ];
 
@@ -332,10 +357,12 @@ export const experience: TimelineItem[] = [
   {
     date: 'February 2023 - Present',
     location: 'rapidcreative.io',
-    title: 'Lead Frontend Development and co-founder',
+    title: 'Lead Developer and Co-founder',
     content: (
       <p>
-        Working in the tech team at rapidcreatve.io as a full-stack developer, with focus on frontend, contributing to the development of web applications and user interfaces using Next.js as frontend framework and Python as backend language. I am also co-founder of the company, that was born in the X-Tech program at DTU.
+        Working in the tech team at rapidcreatve.io as a full-stack developer, with focus on frontend, contributing to
+        the development of web applications and user interfaces using Next.js as frontend framework and Python as
+        backend language. I am also co-founder of the company, that was born in the X-Tech program at DTU.
       </p>
     ),
   },
@@ -345,7 +372,8 @@ export const experience: TimelineItem[] = [
     title: 'Student Assistant in the Engineering Team',
     content: (
       <p>
-        I am currently working as a student assistant in the engineering team at ConWX, where I am developing a new web application for the company using React.
+        I am currently working as a student assistant in the engineering team at ConWX, where I am developing a new web
+        application for the company using React.
       </p>
     ),
   },
@@ -355,7 +383,8 @@ export const experience: TimelineItem[] = [
     title: 'Internship in FrontEnd developer',
     content: (
       <p>
-        Interned as a Frontend Developer with focus on React, contributing to the development of web applications and user interfaces using React as frontend framework.
+        Interned as a Frontend Developer with focus on React, contributing to the development of web applications and
+        user interfaces using React as frontend framework.
       </p>
     ),
   },
@@ -391,7 +420,8 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: "Thank you for taking the time to view my profile. If you have any questions or would like to discuss potential opportunities, please don't hesitate to reach out. I can be contacted via email, and I'm always open to connecting on LinkedIn. Looking forward to hearing from you!",
+  description:
+    "Thank you for taking the time to view my profile. If you have any questions or would like to discuss potential opportunities, please don't hesitate to reach out. I can be contacted via email, and I'm always open to connecting on LinkedIn. Looking forward to hearing from you!",
   items: [
     {
       type: ContactType.Email,
@@ -411,13 +441,13 @@ export const contact: ContactSection = {
     {
       type: ContactType.Github,
       text: 'Pheithar',
-      href: 'https://github.com/Pheithar'
+      href: 'https://github.com/Pheithar',
     },
     {
       type: ContactType.LinkedIn,
       text: 'Alejandro Valverde Mahou',
-      href: 'https://www.linkedin.com/in/pheithar/'
-    }
+      href: 'https://www.linkedin.com/in/pheithar/',
+    },
   ],
 };
 
