@@ -15,12 +15,12 @@ import ScholarIcon from '../components/Icon/ScholarIcon';
 import heroImage from '../images/header-background.jpg';
 import animalImg from '../images/portfolio/animalSound.jpg';
 import gameImg from '../images/portfolio/dynamicDifficulty.jpg';
+import flockImg from '../images/portfolio/flockBots.png';
 import hnefataflImg from '../images/portfolio/hneftal.jpg';
 import madridCentralImg from '../images/portfolio/Madrid Central.jpg';
 import nerveImg from '../images/portfolio/nerves_segm.jpg';
 import pokeImg from '../images/portfolio/pokeIcon.jpg';
 import proceduralAnt from '../images/portfolio/proceduralAnt.png';
-import flockImg from '../images/portfolio/flockBots.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
